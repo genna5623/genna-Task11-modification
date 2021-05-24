@@ -53,7 +53,7 @@
         <!--都道府県-->
         <scene sceneID="MNs-Pg-bR1">
             <objects>
-                <viewController id="gxw-SY-79R" customClass="secondViewController" customModule="ReKadai11" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gxw-SY-79R" customClass="SecondViewController" customModule="ReKadai11" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XZu-4e-dmr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +71,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="BUQ-zB-nNc" kind="unwind" identifier="exit" unwindAction="exitBysegueWithSegue:" id="dyX-ju-ncb"/>
+                                            <segue destination="BUQ-zB-nNc" kind="unwind" identifier="exit" unwindAction="exitBySegueWithSegue:" id="dyX-ju-ncb"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
