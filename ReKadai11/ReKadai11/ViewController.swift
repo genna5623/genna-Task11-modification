@@ -8,24 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet  private weak var firstLabel: UILabel!
+    @IBOutlet private weak var firstLabel: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBAction func exitBySegue(segue:UIStoryboardSegue){
+        guard let tableViewController = segue.source as? SecondViewController else { return }
+        guard let selectedPrefectureName  = tableViewController.selectedPrefectureName else { return }
+        firstLabel.text = selectedPrefectureName
     }
- 
 
-    @IBAction func exitBysegue(segue:UIStoryboardSegue){
-        guard let tableViewController = segue.source as? secondViewController else { return }
-        guard let prefectures  = tableViewController.prefectureName else { return }
-        firstLabel.text = prefectures
-            }
-        @IBAction func exitCancel(segue:UIStoryboardSegue){
+    @IBAction func exitCancel(segue:UIStoryboardSegue){
     }
 }
- 
-
-
-
-
